@@ -12,6 +12,6 @@ body,html{
 }
 h1, h2, p, ul{
     margin: 0;
-    padding:0
+    padding:0;
 }
 `
