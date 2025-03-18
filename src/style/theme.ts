@@ -1,18 +1,18 @@
 import { Theme } from '@/types'
 
-export const lighTheme: Theme = {
+export const lightTheme: Theme = {
   appBackground: '#fff',
   appColor: '#000 ',
   appDefaultStroke: '#E0E0E0 ',
-  appLogo: 'dnc-logo-black.svg ',
+  appLogo: 'dnc-logo-black.svg',
   appSkeletonFron: '#EEE ',
   appSkeletonTo: '#CCC ',
   buttons: {
     alert: '#E80000 ',
     alertColor: '#FFF',
     alertHover: '#D80000 ',
-    desabled: ' #CCC',
-    desabledColor: '#666 ',
+    disabled: ' #CCC',
+    disabledColor: '#666 ',
     primary: ' #0C70f2',
     primaryColor: ' #FFF',
     primaryHover: '#0061DE ',
@@ -24,13 +24,13 @@ export const lighTheme: Theme = {
     success: '#008000',
     warning: '#F7A000',
   },
-  textImput: {
+  textInput: {
     active: '#FFF',
     activeColor: '#000',
     borderColor: '#E0E0E0',
     disabled: '#EEE',
     disabledBorderColor: '#E0E0E0',
-    disabledColor: '#666',
+    disabledColor: '#fff',
     placeholderColor: '#666',
   },
   typographies: {
@@ -44,15 +44,15 @@ export const darckTheme: Theme = {
   appBackground: '#060B26',
   appColor: '#FFF ',
   appDefaultStroke: '#21497D ',
-  appLogo: 'dnc-logo-white.svg ',
-  appSkeletonFron: '##060B26 ',
+  appLogo: 'dnc-logo-white.svg',
+  appSkeletonFron: '#060B26 ',
   appSkeletonTo: '#21497D ',
   buttons: {
     alert: '#E80000 ',
     alertColor: '#FFF',
     alertHover: '#D80000 ',
-    desabled: ' #313649',
-    desabledColor: '#6D7B8E ',
+    disabled: ' #313649',
+    disabledColor: '#6D7B8E ',
     primary: ' #0C70f2',
     primaryColor: ' #FFF',
     primaryHover: '#0061DE ',
@@ -64,7 +64,7 @@ export const darckTheme: Theme = {
     success: '#008000',
     warning: '#F7A000',
   },
-  textImput: {
+  textInput: {
     active: '#0F1535',
     activeColor: '#FFF',
     borderColor: '#21497D',

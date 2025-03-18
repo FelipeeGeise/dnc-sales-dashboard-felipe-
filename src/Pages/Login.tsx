@@ -1,5 +1,12 @@
 import { Box, Container, Grid } from '@mui/material'
-import { BannerImage } from '@/components'
+import {
+  BannerImage,
+  FormComponent,
+  Logo,
+  StyledH1,
+  StyledP,
+} from '@/components'
+import { pxTorem } from '@/utils'
 
 function Login() {
   return (
@@ -13,7 +20,33 @@ function Login() {
             sx={{ alignItems: 'center', display: 'flex', height: '100vh' }}
           >
             <Container maxWidth="sm">
-              <h1>LOGIN</h1>
+              <Box sx={{ marginBottom: pxTorem(24) }}>
+                <Logo height={41} width={100} />
+              </Box>
+
+              <Box sx={{ marginBottom: pxTorem(24) }}>
+                <StyledH1>Bem-Vindo</StyledH1>
+                <StyledP>Digite sua senha e email para logar.</StyledP>
+              </Box>
+
+              <FormComponent
+                inputs={[
+                  { type: 'email', placeholder: 'Email', disabled: true },
+                  { type: 'password', placeholder: 'Senha' },
+                ]}
+                buttons={[
+                  {
+                    className: 'primary',
+                    type: 'submit',
+                    children: 'login',
+                    disabled: true,
+                  },
+                ]}
+                message={{
+                  msg: 'Sucesso !!!',
+                  type: 'success',
+                }}
+              />
             </Container>
           </Grid>
 

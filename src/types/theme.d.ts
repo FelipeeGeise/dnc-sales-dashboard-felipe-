@@ -9,8 +9,8 @@ export interface Theme {
     alert: string
     alertColor: string
     alertHover: string
-    desabled: string
-    desabledColor: string
+    disabled: string
+    disabledColor: string
     primary: string
     primaryColor: string
     primaryHover: string
@@ -22,7 +22,7 @@ export interface Theme {
     success: string
     warning: string
   }
-  textImput: {
+  textInput: {
     active: string
     activeColor: string
     borderColor: string
